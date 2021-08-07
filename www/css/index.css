@@ -1,0 +1,107 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(to bottom, #A7A7A7 0%, #E4E4E4 51%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    text-transform:uppercase;
+    width:100%;
+}
+
+html {
+    font-family: sans-serif;
+    background-color: #335;
+    font-size: 16px;
+}
+
+body {
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 10px 20px 10px;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    display: block;
+    font-size: 18px;
+}
+
+div#main {
+    width: 600px;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+    background-color: #fff;
+    height: 460px;
+}
+
+div#warnings {
+    color: red;
+    font-weight: bold;
+    margin: 10px;
+}
+
+div#join-section {
+    float: left;
+    margin: 10px;
+}
+
+div#users-section {
+    width: 170px;
+    float: right;
+    padding: 0px;
+    margin: 10px;
+}
+
+ul#users {
+    list-style-type: none;
+    padding-left: 0px;
+    height: 300px;
+    overflow: auto;
+}
+
+div#chat-section {
+    width: 390px;
+    float: left;
+    margin: 10px;
+}
+
+div#messages {
+    margin: 0px;
+    height: 300px;
+    overflow: auto;
+}
+
+div#messages p {
+    margin: 0px;
+    padding: 0px;
+}
+
+div#footer {
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    margin: 10px 0px 30px 0px;
+}
+
+div#footer a {
+    color: #fff;
+}
+
+div.clear {
+    clear: both;
+}
